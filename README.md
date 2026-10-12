@@ -10,6 +10,8 @@
 
 <p align="center">
   <a href="ml/notebooks/customer-intelligence.ipynb">Executed notebook</a> |
+  <a href="reports/presentation/Customer_Intelligence_ML_Pipeline.pdf">Presentation PDF</a> |
+  <a href="reports/presentation/Customer_Intelligence_ML_Pipeline.pptx">Editable PowerPoint</a> |
   <a href="docs/presentation-source.md">Presentation source</a> |
   <a href="reports/figures">Result figures</a>
 </p>
@@ -193,6 +195,19 @@ Re-export the saved notebook plots:
 python ml\scripts\export_notebook_figures.py
 ```
 
+Regenerate the editable presentation:
+
+```powershell
+python -m pip install -r docs\presentation-requirements.txt
+python ml\scripts\generate_presentation.py
+```
+
+On Windows with Microsoft PowerPoint installed, export the PDF and optional slide previews:
+
+```powershell
+.\docs\export_presentation.ps1
+```
+
 For Kaggle, upload [customer-intelligence.ipynb](ml/notebooks/customer-intelligence.ipynb), enable Internet access for `ucimlrepo`, and run every cell in order. A GPU session may be enabled, but this scikit-learn workflow executes on the CPU.
 
 ## Repository structure
@@ -201,13 +216,17 @@ For Kaggle, upload [customer-intelligence.ipynb](ml/notebooks/customer-intellige
 customer-intelligence-ml/
 |-- docs/
 |   |-- assets/
+|   |-- export_presentation.ps1
+|   |-- presentation-requirements.txt
 |   `-- presentation-source.md
 |-- ml/
 |   |-- notebooks/customer-intelligence.ipynb
 |   |-- scripts/
 |   |-- src/customer_intelligence/
 |   `-- tests/
-|-- reports/figures/
+|-- reports/
+|   |-- figures/
+|   `-- presentation/
 |-- README.md
 |-- codex.md
 `-- LICENSE
@@ -215,7 +234,9 @@ customer-intelligence-ml/
 
 ## Presentation support
 
-The [presentation source](docs/presentation-source.md) contains a grounded slide outline, speaker notes, verified metrics, figure references, and a ready-to-paste generation prompt for NotebookLM or Gemini. It is designed to create an interview presentation without inventing results beyond the executed notebook.
+The repository includes a watermark-free [presentation PDF](reports/presentation/Customer_Intelligence_ML_Pipeline.pdf) and an [editable PowerPoint deck](reports/presentation/Customer_Intelligence_ML_Pipeline.pptx). The 12-slide deck uses the verified notebook plots, includes presenter notes, and can be rebuilt from [generate_presentation.py](ml/scripts/generate_presentation.py).
+
+The [presentation source](docs/presentation-source.md) contains the grounded slide outline, verified metrics, figure references, and interview talking points. It can also be supplied to NotebookLM or Gemini, but generated charts should always be replaced with the exported notebook figures before publication.
 
 ## Limitations and responsible use
 
