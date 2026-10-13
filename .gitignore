@@ -30,12 +30,8 @@ node_modules/
 .next/
 .vercel/
 
-ml/data/raw/*
-!ml/data/raw/.gitkeep
-ml/data/processed/*
-!ml/data/processed/.gitkeep
-ml/artifacts/*
-!ml/artifacts/.gitkeep
+# The original UCI/Kaggle dataset is kept locally and is not redistributed.
+Dataset/
 
 *.joblib
 *.pkl
