@@ -1,4 +1,29 @@
-# Credit Behavior Intelligence
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:081A2D,50:0E7490,100:38BDF8&amp;height=230&amp;section=header&amp;text=Credit%20Behavior%20Intelligence&amp;fontSize=42&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=35&amp;desc=PCA%20%7C%20K-Means%20%7C%20DBSCAN%20%7C%20Gradient%20Boosting&amp;descSize=18&amp;descAlignY=55"
+    alt="Credit Behavior Intelligence project banner"
+    width="100%"
+  />
+</p>
+
+<h1 align="center">Credit Behavior Intelligence</h1>
+
+<p align="center">
+  An end-to-end machine-learning study of credit behavior using dimensionality reduction, clustering, anomaly exploration, and calibrated classification.
+</p>
+
+<p align="center">
+  <a href="notebooks/credit-behavior-intelligence.ipynb"><img src="https://img.shields.io/badge/Notebook-Kaggle-20BEFF?style=for-the-badge&amp;logo=kaggle&amp;logoColor=white" alt="Kaggle notebook" /></a>
+  <a href="source/credit_behavior_intelligence"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python 3.11 or newer" /></a>
+  <a href="source/tests"><img src="https://img.shields.io/badge/Tests-16%20Passing-2EA44F?style=for-the-badge" alt="16 tests passing" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-7C3AED?style=for-the-badge" alt="MIT License" /></a>
+</p>
+
+<p align="center">
+  <strong>PCA</strong> | <strong>K-Means</strong> | <strong>DBSCAN</strong> | <strong>Histogram Gradient Boosting</strong> | <strong>Probability Calibration</strong>
+</p>
+
+---
 
 Credit Behavior Intelligence is a machine-learning portfolio project that studies historical credit-card customer behavior. It combines dimensionality reduction, customer segmentation, anomaly exploration, and historical default prediction in one leakage-aware workflow.
 
